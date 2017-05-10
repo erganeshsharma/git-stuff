@@ -38,3 +38,18 @@ $ git config --list
 
 # to see the version of git installed
 $ git --version
+
+# 3. UPGRADE
+
+# To get the latest Git version,
+# first add the Git Maintainer repository for ubuntu.
+$ sudo add-apt-repository ppa:git-core/ppa
+
+# Not necessary to remove the existing Git, but in case of problem we can remove it before installing newer version
+$ sudo apt-get remove git
+
+# Now installing the new version
+$ sudo apt-get udpate
+$ sudo apt-get install git
+# Check the newly installed git version
+$ git --version
