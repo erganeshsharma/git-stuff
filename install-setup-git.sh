@@ -1,13 +1,39 @@
 # Commands to install and setup your git on an Ubuntu machine
 
 # 1. INSTALL
-
-# Installing Git by using Ubuntu's default repositories.
+#----------------
+# Installing Git on Ubuntu by using Ubuntu's default repositories.
 $ sudo apt-get update
 $ sudo apt-get install git
 
-# 2. SETUP
+# Installing on openSUSE
+$ zypper install git
 
+# Installing on Arch Linux
+$ pacman -S git
+
+# Installing on Fedora
+$ yum install git #(up to Fedora 21)
+$ dnf install git #(Fedora 22 and later)
+
+# Installing on FreeBSD
+$ pkg install git
+
+# Installing on OpenBSD
+$ pkg_add git
+
+# Installing on Alpine
+$ apk add git
+
+# Installing on Gentoo
+$ emerge --ask --verbose dev-vcs/git
+
+# Installing on Mageia
+$ urpmi git 
+
+
+# 2. SETUP (for Ubuntu machine)
+# --------------
 # Setting using git config command.
 
 # user name setup for git
@@ -39,8 +65,9 @@ $ git config --list
 # to see the version of git installed
 $ git --version
 
-# 3. UPGRADE
 
+# 3. UPGRADE
+#---------------
 # To get the latest Git version,
 # first add the Git Maintainer repository for ubuntu.
 $ sudo add-apt-repository ppa:git-core/ppa
